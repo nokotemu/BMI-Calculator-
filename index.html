@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+    <!--Nadja-->
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>BMI Calculator</title>
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+            <h1>BMI Calculator</h1>
+            <p style="text-align: justify">BMI is calculated by dividing a person's weight in kilograms by their height in meters squared. A BMI between 18.5 and 24.9 is considered healthy,while a BMI above 25 is considered<br>
+                overweight and a BMI above 30 is considered obese. However, it's important to note that BMI is not always an accurate indicator of health, as it does not take into account factors<br>
+                such as muscle mass, bone density, and body composition. Therefore, it's best to consult with a healthcare professional to determine an individualized plan for achieving optimal health and wellness.</p>
+
+            <br>
+            <div class="content">
+
+
+                <div class="input">
+                    <label for="height">Age</label>
+                    <input type="text" class="text-input" id="age" autocomplete="off" required/>
+                </div>
+
+                <div class="gender">
+
+                    <label class="container">
+                        <input type="radio" name="radio" id="m"><p class="text">Male</p>
+                        <span class="checkmark"></span>
+                        </label>
+                      
+                        <label class="container">
+                        <input type="radio" name="radio" id="f"><p class="text">Female</p>
+                        <span class="checkmark"></span>
+                        </label>
+
+                </div>
+                
+            <div class="containerHW">
+                <div class="inputH">
+                    <label for="Height">Height(Cm)</label>
+                    <input type="number" id="Height" required>
+                    <br>
+                    <br>
+            <div class="containerHW"> </div>
+                 <div class="InputW">
+                    <label for="Weight">Weight(Kg)</label>
+                    <input type="number" id="Weight" required> 
+                    </div>
+                </div>
+
+                     <button class="calculate" id="submit" onclick="calculate();">Calculate BMI</button>
+                     </div>
+                     <div class="result">
+                        <p>Your BMI is</p>
+                        <p class="comment"></p>
+                        </div>
+                    <div class="footer"><a class="footer-text" target="_blank" href="https://www.instagram.com/nox_____tem/">By Nox Mortem</a>
+                    </div> 
+                <a href="" target="_blank" class="linkdownload">Download JPEG</a>
+    </div>
+
+    <div class="footer">
+        <br>
+        <strong>Highlight Features</strong>
+        <p style="text-align:center">-Calculate your body mass index precisely</br>
+            -Categorize your BMI type</br>
+            -Helps you to get lean with healthy diet programs</br>
+    
+    </div>   
+        
+<!--The Modal-->
+<div id="myModal" class="modal">
+    <!--Modal Content-->
+<div class="modal-content">
+    <span class="close">&times;</span>
+    <p id="modaltext"></p>
+</div>    
+</body>
+</html>
